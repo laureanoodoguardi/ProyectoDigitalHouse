@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>E-bookShop</title>
+    <link  href="http://meyerweb.com/eric/tools/css/reset/reset.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="res/css/bootstrap.css">
+    <link href="res/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="res/css/admin.css" rel="stylesheet" />
+
+  </head>
+
+
+  <body class="login">
+
+  	<form id="Form1" runat="server">
+
+      <div class="container-fluid">
+          <div class="text-center">
+
+              <h1><img src="res/images/ebookstore.png"  alt=""></h1>
+          </div>
+          <div id="login-form" class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+
+              <div class="panel panel-default">
+
+                  <div class="panel-body">
+                          <div id="LoginForm" class="form-horizontal">
+
+                              <div class="input-group">
+                                  <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                  <asp:TextBox class="form-control" id="txtUsername" runat="server"  EnableViewState="False"></asp:TextBox>
+                              </div>
+
+                              <div class="input-group">
+                                  <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                  <asp:TextBox class="form-control" id="txtPassword" runat="server" EnableViewState="False" TextMode="Password"></asp:TextBox>
+                              </div>
+
+                              <div class="form-group">
+                                  <div class="col-sm-12">
+                                      <button type="submit" class="btn btn-success btn-block" id="btnContinuar" runat="server" OnServerClick="Login_Click">
+                                          Ingresar
+                                      </button>
+                                  </div>
+                              </div>
+
+                              <div class="form-group">
+                                  <div class="col-sm-12">
+                                      <button type="submit" class="btn btn-primary btn-block" id="btnRegistrarse" runat="server" OnServerClick="Login_Click">
+                                          Registrate!
+                                      </button>
+                                  </div>
+                              </div>
+                              <asp:Panel runat="server" ID="pnlMsg1" Visible=false>
+
+                                 <div class="alert alert-danger" role="alert">
+                                  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                 <asp:Label id="lblMsg1" runat="server" text=""></asp:Label>
+                                </div>
+                              </asp:Panel>
+
+
+
+
+                          </div>
+
+                          <a href="gs_pass_reset.aspx" class="pull-left">Olvidé mi clave</a>
+                          <a href="#" class="pull-right">Ayuda</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </form>
+     <footer class="text-center">
+             <div>asd Software. All rights reserved.</div>
+              <div class="info">
+                  Av. Corrientes 266 (CP 1426) / CABA / República Argentina - Tel. (5411) 4723-0248 / <a href="mailto:informes@abssa.com.ar">informes@zabe.com.ar</a>
+              </div>
+          </footer>
+
+  </body>
+</html>
